@@ -1,9 +1,11 @@
+import Header from "../Header/Header";
 import Main from "../Main/Main";
 import "./App.css";
 
 function App() {
   return (
     <div className="app">
+      <Header />
       <Main />
       <p>
         Body Mass Index Calculator Better understand your weight in relation to

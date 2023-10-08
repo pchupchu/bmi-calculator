@@ -1,0 +1,9 @@
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 0px 0px 35px 35px;
+  height: 640px;
+  background-image: var(--gradient);
+}

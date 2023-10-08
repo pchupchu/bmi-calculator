@@ -1,14 +1,16 @@
 .app {
     margin: 0 auto;
     min-height: 100vh;
-    font-size: 14px;
+    font-size: var(--body-s);
     font-weight: 400;
+    line-height: var(--body-line-height);
     color: var(--gunmetal);
     background-color: var(--white);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
   }

@@ -16,12 +16,14 @@ body {
   --grey: #5e6e85;
   --light-grey: #d8e2e7;
 
-  --heading-XL: 64px;
-  --heading-L: 48px;
-  --heading-M: 24px;
-  --heading-S: 20px;
-  --body-M: 16px;
-  --body-S: 14px;
+  --gradient: linear-gradient(290deg, #d6e6fe 0%, rgba(214, 252, 254, 0.00) 100%);
+
+  --heading-xl: 64px;
+  --heading-l: 48px;
+  --heading-m: 24px;
+  --heading-s: 20px;
+  --body-m: 16px;
+  --body-s: 14px;
 
   --heading-line-height: 1.1;
   --body-line-height: 1.5;
