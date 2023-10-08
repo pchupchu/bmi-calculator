@@ -1,9 +1,8 @@
-# Frontend Mentor - Fylo dark theme landing page
+# Frontend Mentor - Body Mass Index Calculator
 
-![Design preview for the Fylo dark theme landing page challenge](./src/design/desktop-preview.jpg
-)
+![Design preview for the Body Mass Index Calculator coding challenge](./src/design/preview.jpg)
 
-This is a solution to the [Fylo dark theme landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Body Mass Index Calculator challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/body-mass-index-calculator-brrBkfSz1T). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -31,4 +30,3 @@ This is a solution to the [Fylo dark theme landing page challenge on Frontend Me
 ## Author
 
 - Frontend Mentor - [@pchupchu](https://www.frontendmentor.io/profile/pchupchu)
-
