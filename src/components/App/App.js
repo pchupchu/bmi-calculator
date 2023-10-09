@@ -8,14 +8,6 @@ function App() {
       <Header />
       <Main />
       <p>
-        Body Mass Index Calculator Better understand your weight in relation to
-        your height using our body mass index (BM) calculator. While BMI is not
-        the sole determinant of a healthy weight, it offers a valuable starting
-        point to evaluate your overall health and well-being. Enter your details
-        below Metric Imperial Height Weight Your BMI is...
-        {/* <!-- add score --> */}
-        {/* Your BMI suggests you're <!-- add classification -->.  */}
-        {/* Your ideal weight is between <!-- add range -->. */}
         What your BMI result means A BMI range of 18.5 to 24.9 is considered a
         'healthy weight.' Maintaining a healthy weight may lower your chances of
         experiencing health issues later on, such as obesity and type 2
