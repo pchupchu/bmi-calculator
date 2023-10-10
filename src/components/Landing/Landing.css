@@ -2,3 +2,10 @@
   display: flex;
   flex-direction: column;
 }
+
+@media screen and (min-width: 1024px) {
+  .landing {
+    flex-direction: row;
+    gap: 32px;
+  }
+}

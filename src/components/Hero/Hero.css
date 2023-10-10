@@ -14,10 +14,9 @@
   }
 }
 
-@media screen and (min-width: 920px) {
+@media screen and (min-width: 1280px) {
   .hero {
     padding: 100px 40px;
-    gap: 35px;
   }
 }
 
@@ -37,11 +36,12 @@
   }
 }
 
-@media screen and (min-width: 920px) {
+@media screen and (min-width: 1024px) {
   .hero__title {
     font-size: var(--heading-xl);
     letter-spacing: -3.2px;
     max-width: 564px;
+    text-align: left;
   }
 }
 
@@ -53,8 +53,9 @@
   z-index: 1;
 }
 
-@media screen and (min-width: 920px) {
+@media screen and (min-width: 1024px) {
   .hero__text {
     max-width: 465px;
+    text-align: left;
   }
 }

@@ -14,7 +14,7 @@
   }
 }
 
-@media screen and (min-width: 920px) {
+@media screen and (min-width: 1024px) {
   .header {
     padding: 75px 40px 43px;
     justify-content: start;
@@ -26,7 +26,7 @@
   height: 40px;
 }
 
-@media screen and (min-width: 920px) {
+@media screen and (min-width: 1024px) {
   .header__logo {
     width: 64px;
     height: 64px;

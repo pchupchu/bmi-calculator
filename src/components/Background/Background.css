@@ -7,3 +7,17 @@
   height: 640px;
   background-image: var(--gradient);
 }
+
+@media screen and (min-width: 768px) {
+  .background {
+    height: 768px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .background {
+    height: 737px;
+    width: 978px;
+    margin-left: 24px;
+  }
+}
