@@ -1,0 +1,35 @@
+.guidance {
+  padding: 56px 20px;
+  background: var(--light-gradient);
+}
+
+@media screen and (min-width: 480px) {
+  .guidance {
+    padding: 60px 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .guidance {
+    margin: 0 24px;
+    border-radius: 35px;
+  }
+}
+
+
+.guidance__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+@media screen and (min-width: 1024px) {
+  .guidance__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+}

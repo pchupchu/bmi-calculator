@@ -3,7 +3,7 @@ import man from "../../images/image-man-eating.webp";
 
 function Means() {
   return (
-    <div className="means">
+    <section className="means">
       <img className="means__image" src={man} alt="man eating" />
       <div className="means__container">
         <h2 className="means__title">What your BMI result means</h2>
@@ -16,7 +16,7 @@ function Means() {
           activity, ideally about 30 minutes daily for five days a week.
         </p>
       </div>
-    </div>
+    </section>
   );
 }
 

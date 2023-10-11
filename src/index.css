@@ -17,6 +17,7 @@ body {
   --light-grey: #d8e2e7;
 
   --gradient: linear-gradient(290deg, #d6e6fe 0%, rgba(214, 252, 254, 0.00) 100%);
+  --light-gradient: linear-gradient(290deg, rgba(214,230,254, 0.25) 0%, rgba(214, 252, 254, 0.25) 100%);
   --blue-gradient: linear-gradient(90deg, #345ff6 0%, #587dff 100%);
   --form-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
 

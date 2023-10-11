@@ -5,11 +5,11 @@ import Calculator from "../Calculator/Calculator";
 
 function Landing() {
   return (
-    <div className="landing">
+    <section className="landing">
       <Background />
       <Hero />
       <Calculator />
-    </div>
+    </section>
   );
 }
 
