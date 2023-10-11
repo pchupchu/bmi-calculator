@@ -1,12 +1,17 @@
 .calculator {
-  padding: 0 24px;
+  padding: 0 24px 72px;
   z-index: 1;
-  margin-bottom: 72px;
 }
 
 @media screen and (min-width: 768px) {
   .calculator {
-    padding: 0 42px 0 40px;
+    padding: 0 42px 96px 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .calculator {
+    padding: 0 0 86px;
   }
 }
 
@@ -24,6 +29,12 @@
 @media screen and (min-width: 768px) {
   .calculator__container {
     padding: 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .calculator__container {
+    max-width: 564px;
   }
 }
 

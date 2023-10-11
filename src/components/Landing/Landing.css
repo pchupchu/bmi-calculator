@@ -7,5 +7,6 @@
   .landing {
     flex-direction: row;
     gap: 32px;
+    justify-content: center;
   }
 }

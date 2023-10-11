@@ -14,9 +14,19 @@
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .hero {
+    margin: 0;
+    align-items: start;
+    gap: 35px;
+  }
+}
+
+
 @media screen and (min-width: 1280px) {
   .hero {
-    padding: 100px 40px;
+    padding: 99px 0;
+    justify-content: start;
   }
 }
 

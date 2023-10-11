@@ -7,22 +7,66 @@
   gap: 48px;
 }
 
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 640px) {
   .means {
-    padding: 0 40px 40px;
+    padding: 0 43px 96px 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .means {
+    padding: 65px 40px 96px;
+    align-items: end;
+    max-width: 1160px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .means {
-    padding: 100px 40px;
+    background-image: url('../../images/pattern-curved-line-left.svg');
+    background-repeat: no-repeat;
+    background-position: top 13px right 67px;
   }
-} */
+}
 
 .means__image {
   width: 100%;
   object-fit: cover;
 
+}
+
+@media screen and (min-width: 640px) {
+  .means__image {
+    width: 60%;
+    margin-left: -74px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .means__image {
+    width: 435px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .means__image {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .means__image {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .means__image {
+    width: 564px;
+
+  }
 }
 
 .means__container {
@@ -31,6 +75,22 @@
   gap: 32px;
   padding: 0 24px;
 }
+
+@media screen and (min-width: 640px) {
+  .means__container {
+    padding: 35px 0 0;
+    max-width: 331px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .means__container {
+    max-width: 465px;
+    gap: 35px;
+    padding: 0 0 40px;
+  }
+}
+
 
 .means__title {
   font-size: var(--heading-ml);
@@ -41,20 +101,13 @@
   z-index: 1;
 }
 
-/* @media screen and (min-width: 768px) {
+
+@media screen and (min-width: 960px) {
   .means__title {
+    font-size: var(--heading-l);
     letter-spacing: -2.4px;
   }
 }
-
-@media screen and (min-width: 1024px) {
-  .means__title {
-    font-size: var(--heading-xl);
-    letter-spacing: -3.2px;
-    max-width: 564px;
-    text-align: left;
-  }
-} */
 
 .means__text {
   color: var(--grey);
@@ -63,10 +116,3 @@
   margin: 0;
   z-index: 1;
 }
-
-/* @media screen and (min-width: 1024px) {
-  .means__text {
-    max-width: 465px;
-    text-align: left;
-  }
-} */
