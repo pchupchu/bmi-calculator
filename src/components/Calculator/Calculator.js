@@ -1,72 +1,62 @@
+import { useState } from "react";
 import "./Calculator.css";
+import Metric from "../Metric/Metric";
+import Imperial from "../Imperial/Imperial";
 
 function Calculator() {
+  const [isMetic, setIsMetric] = useState(true);
+  const [isImperial, setIsImperial] = useState(false);
+
+  const handleMetricClick = () => {
+    setIsMetric(true);
+    setIsImperial(false);
+    console.log(`metric ${isMetic}`);
+    console.log(`imperial ${isImperial}`);
+  };
+
+  const handleImperialClick = () => {
+    setIsImperial(true);
+    setIsMetric(false);
+    console.log(`metric ${isMetic}`);
+    console.log(`imperial ${isImperial}`);
+  };
+
   return (
     <div className="calculator">
       <div className="calculator__container">
         <form className="calculator__form">
           <h2 className="calculator__title">Enter your details below</h2>
           <fieldset className="calculator__system">
-            <div class="calculator__custom-radio">
+            <div className="calculator__custom-radio">
               <input
                 type="radio"
                 name="choice"
                 id="metric"
                 value="metric"
                 className="calculator__choice"
-                checked
+                checked={isMetic}
+                onChange={handleMetricClick}
               />
-              <label for="metric" className="calculator__system-label">
+              <label htmlFor="metric" className="calculator__system-label">
                 Metric
               </label>
             </div>
-            <div class="calculator__custom-radio">
+            <div className="calculator__custom-radio">
               <input
                 type="radio"
                 name="choice"
                 id="imperial"
                 value="imperial"
                 className="calculator__choice"
+                checked={isImperial}
+                onChange={handleImperialClick}
               />
-              <label for="imperial" className="calculator__system-label">
+              <label htmlFor="imperial" className="calculator__system-label">
                 Imperial
               </label>
             </div>
           </fieldset>
-          <fieldset class="calculator__info">
-            <div className="calculator__info-container">
-              <label for="height" className="calculator__label">
-                Height
-              </label>
-              <input
-                type="text"
-                className="calculator__input"
-                id="height"
-                name="height"
-                placeholder="0"
-                required
-                // value={values.height || ""}
-                // onChange={handleChange}
-              />
-              <span className="calculator__unit">cm</span>
-            </div>
-            <div className="calculator__info-container">
-              <label for="weight" className="calculator__label">
-                Weight
-              </label>
-              <input
-                type="text"
-                className="calculator__input"
-                id="weight"
-                name="weight"
-                placeholder="0"
-                required
-                // value={values.height || ""}
-                // onChange={handleChange}
-              />
-              <span className="calculator__unit">kg</span>
-            </div>
-          </fieldset>
+          {isMetic ? <Metric /> : <Imperial />}
         </form>
         <div className="calculator__result">
           <div className="calculator__inner">
