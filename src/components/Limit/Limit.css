@@ -20,6 +20,10 @@
     max-width: 336px;
     box-sizing: border-box;
   }
+
+  .limit__item:last-of-type {
+    max-width: 365px;
+  }
 }
 
 @media screen and (min-width: 1024px) {

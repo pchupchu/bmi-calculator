@@ -13,6 +13,7 @@
   .guidance {
     margin: 0 24px;
     border-radius: 35px;
+    padding: 72px 40px 96px;
   }
 }
 
@@ -22,7 +23,13 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 38px;
+}
+
+@media screen and (min-width: 768px) {
+  .guidance__list {
+    gap: 37px;
+  }
 }
 
 @media screen and (min-width: 1024px) {

@@ -2,7 +2,7 @@
   margin: 0;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 32px;
+  gap: 30px;
 }
 
 @media screen and (min-width: 640px) {
@@ -17,7 +17,7 @@
   .advice__item {
     max-width: 365px;
     grid-template-columns: 1fr;
-    gap: 45px;
+    gap: 42px;
     align-items: start;
     align-content: start;
   }
@@ -33,7 +33,7 @@
 .advice__description {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
 }
 
 .advice__title {

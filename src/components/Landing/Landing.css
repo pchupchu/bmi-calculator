@@ -7,6 +7,8 @@
   .landing {
     flex-direction: row;
     gap: 32px;
-    justify-content: center;
+    justify-content: space-between;
+    max-width: 1160px;
+    margin: 0 auto;
   }
 }

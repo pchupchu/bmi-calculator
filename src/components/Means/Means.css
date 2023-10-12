@@ -40,7 +40,7 @@
 @media screen and (min-width: 640px) {
   .means__image {
     width: 60%;
-    margin-left: -74px;
+    margin-left: -78px;
   }
 }
 
@@ -78,7 +78,7 @@
 
 @media screen and (min-width: 640px) {
   .means__container {
-    padding: 35px 0 0;
+    padding: 0;
     max-width: 331px;
   }
 }
@@ -87,7 +87,7 @@
   .means__container {
     max-width: 465px;
     gap: 35px;
-    padding: 0 0 40px;
+    padding-bottom: 40px;
   }
 }
 
