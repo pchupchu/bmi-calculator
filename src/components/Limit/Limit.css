@@ -9,8 +9,6 @@
   box-shadow: var(--shadow);
 }
 
-
-
 @media screen and (min-width: 640px) {
   .limit__item {
     padding: 32px;
@@ -24,15 +22,38 @@
   }
 }
 
-/* @media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .limit__item {
     max-width: 365px;
-    grid-template-columns: 1fr;
-    gap: 45px;
-    align-items: start;
-    align-content: start;
   }
-} */
+
+  .limit__item:first-of-type {
+    margin-bottom: 8px;
+    margin-left: 100px;
+    grid-area: gender;
+    grid-column: 3 / span 3;
+  }
+
+  .limit__item:nth-of-type(2) {
+    grid-area: age;
+    grid-column: 2 / span 2;
+  }
+
+  .limit__item:nth-of-type(3) {
+    grid-area: muscle;
+    grid-column: 4 / span 2;
+  }
+
+  .limit__item:nth-of-type(4) {
+    grid-area: pregnancy;
+    grid-column: 1 / span 2;
+  }
+
+  .limit__item:nth-of-type(5) {
+    grid-area: race;
+    grid-column: 3 / span 2;
+  }
+}
 
 .limit__container {
   display: flex;

@@ -8,12 +8,41 @@
   }
 }
 
+@media screen and (min-width:1024px) {
+  .limitation {
+    margin: 0 auto;
+    max-width: 1160px;
+    padding: 120px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width:1280px) {
+  .limitation {
+    background-image: url('../../images/pattern-curved-line-right.svg');
+    background-repeat: no-repeat;
+    background-position: top 371px left 205px;
+  }
+}
+
+
 .limitation__container {
   display: flex;
   flex-direction: column;
   gap: 32px;
   align-items: center;
   margin-bottom: 56px;
+}
+
+@media screen and (min-width: 1024px) {
+  .limitation__container {
+    gap: 35px;
+    max-width: 564px;
+    align-items: start;
+    margin-right: -400px;
+  }
 }
 
 .limitation__title {
@@ -24,12 +53,12 @@
   margin: 0;
 }
 
-/* @media screen and (min-width: 960px) {
+@media screen and (min-width: 960px) {
   .limitation__title {
     font-size: var(--heading-l);
     letter-spacing: -2.4px;
   }
-} */
+}
 
 .limitation__description {
   color: var(--grey);
@@ -37,6 +66,12 @@
   line-height: var(--body-line-height);
   margin: 0;
   text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .limitation__description {
+   text-align: left;
+  }
 }
 
 .limitation__list {
@@ -58,3 +93,14 @@
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .limitation__list {
+    display: grid;
+    grid-template-columns: repeat(5, 166px);
+    grid-template-areas: 
+    ". . gender"
+    ". age muscle"
+    "pregnancy race .";
+    gap: 24px 32px;
+  }
+}
