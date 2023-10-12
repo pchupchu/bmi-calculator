@@ -6,25 +6,35 @@ import Imperial from "../Imperial/Imperial";
 function Calculator() {
   const [isMetic, setIsMetric] = useState(true);
   const [isImperial, setIsImperial] = useState(false);
+  const [values, setValues] = useState({});
+  // const [bmi, setBmi] = useState(0);
 
   const handleMetricClick = () => {
     setIsMetric(true);
     setIsImperial(false);
-    console.log(`metric ${isMetic}`);
-    console.log(`imperial ${isImperial}`);
   };
 
   const handleImperialClick = () => {
     setIsImperial(true);
     setIsMetric(false);
-    console.log(`metric ${isMetic}`);
-    console.log(`imperial ${isImperial}`);
+  };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setValues({ ...values, [name]: value });
+    console.log(values);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // setBmi(values.height / values.weight);
+    // console.log(bmi);
   };
 
   return (
     <div className="calculator">
       <div className="calculator__container">
-        <form className="calculator__form">
+        <form className="calculator__form" onSubmit={handleSubmit}>
           <h2 className="calculator__title">Enter your details below</h2>
           <fieldset className="calculator__system">
             <div className="calculator__custom-radio">
@@ -56,7 +66,11 @@ function Calculator() {
               </label>
             </div>
           </fieldset>
-          {isMetic ? <Metric /> : <Imperial />}
+          {isMetic ? (
+            <Metric values={values} handleChange={handleChange} />
+          ) : (
+            <Imperial values={values} handleChange={handleChange} />
+          )}
         </form>
         <div className="calculator__result">
           <div className="calculator__inner">

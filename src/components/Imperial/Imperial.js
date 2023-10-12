@@ -1,6 +1,6 @@
 import "./Imperial.css";
 
-function Imperial() {
+function Imperial({ values, handleChange }) {
   return (
     <fieldset className="imperial">
       <div className="imperial__wrapper">
@@ -15,8 +15,8 @@ function Imperial() {
             name="height"
             placeholder="0"
             required
-            // value={values.height || ""}
-            // onChange={handleChange}
+            value={values.height || ""}
+            onChange={handleChange}
           />
           <span className="imperial__unit">ft</span>
         </div>
@@ -35,8 +35,8 @@ function Imperial() {
             name="height_in"
             placeholder="0"
             required
-            // value={values.height || ""}
-            // onChange={handleChange}
+            value={values.height_in || ""}
+            onChange={handleChange}
           />
           <span className="imperial__unit">in</span>
         </div>
@@ -53,8 +53,8 @@ function Imperial() {
             name="weight"
             placeholder="0"
             required
-            // value={values.height || ""}
-            // onChange={handleChange}
+            value={values.weight || ""}
+            onChange={handleChange}
           />
           <span className="imperial__unit">st</span>
         </div>
@@ -64,7 +64,7 @@ function Imperial() {
             htmlFor="weight_lbs"
             className="imperial__label imperial__label_disabled"
           >
-            Height
+            Weight
           </label>
           <input
             type="text"
@@ -73,8 +73,8 @@ function Imperial() {
             name="weight_lbs"
             placeholder="0"
             required
-            // value={values.height || ""}
-            // onChange={handleChange}
+            value={values.weight_lbs || ""}
+            onChange={handleChange}
           />
           <span className="imperial__unit">lbs</span>
         </div>

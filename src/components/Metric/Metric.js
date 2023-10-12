@@ -1,6 +1,6 @@
 import "./Metric.css";
 
-function Metric() {
+function Metric({ values, handleChange }) {
   return (
     <fieldset className="metric">
       <div className="metric__container">
@@ -14,8 +14,8 @@ function Metric() {
           name="height"
           placeholder="0"
           required
-          // value={values.height || ""}
-          // onChange={handleChange}
+          value={values.height || ""}
+          onChange={handleChange}
         />
         <span className="metric__unit">cm</span>
       </div>
@@ -30,8 +30,8 @@ function Metric() {
           name="weight"
           placeholder="0"
           required
-          // value={values.height || ""}
-          // onChange={handleChange}
+          value={values.weight || ""}
+          onChange={handleChange}
         />
         <span className="metric__unit">kg</span>
       </div>
