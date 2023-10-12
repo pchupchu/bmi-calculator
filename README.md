@@ -15,7 +15,7 @@ This is a solution to the [Body Mass Index Calculator challenge on Frontend Ment
 
 ### Links
 
-- [Solution URL](https://www.frontendmentor.io/solutions/simple-mobilefirst-solution-to-react-component-using-flexbox-VdvdY-rbX_)
+- [Solution URL](https://www.frontendmentor.io/solutions/body-mass-index-calculator-layout-4Q3Ga5shV-)
 - [Live Site URL](https://bmi-calculator-bice-nine.vercel.app/)
 
 ### Built with
