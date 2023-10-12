@@ -39,7 +39,7 @@ function Calculator() {
                 Height
               </label>
               <input
-                type="number"
+                type="text"
                 className="calculator__input"
                 id="height"
                 name="height"
@@ -48,13 +48,14 @@ function Calculator() {
                 // value={values.height || ""}
                 // onChange={handleChange}
               />
+              <span className="calculator__unit">cm</span>
             </div>
             <div className="calculator__info-container">
               <label for="weight" className="calculator__label">
                 Weight
               </label>
               <input
-                type="number"
+                type="text"
                 className="calculator__input"
                 id="weight"
                 name="weight"
@@ -63,6 +64,7 @@ function Calculator() {
                 // value={values.height || ""}
                 // onChange={handleChange}
               />
+              <span className="calculator__unit">kg</span>
             </div>
           </fieldset>
         </form>
