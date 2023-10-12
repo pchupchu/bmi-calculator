@@ -1,6 +1,6 @@
 .guidance {
   padding: 56px 20px;
-  background: var(--light-gradient);
+  background: var(--gradient);
 }
 
 @media screen and (min-width: 480px) {
